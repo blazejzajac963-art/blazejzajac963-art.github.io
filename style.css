@@ -22,10 +22,9 @@ body {
 }
 
 .logo {
-  width: 600px;
+  width: 1000px;
   opacity: 0;
   animation: fadeIn 2.8s ease-out forwards;
-  transform: scaleX(1.5); /* 1.0 = oryginał, 1.5 = 50% szersze */
   transform-origin: center;
 }
 
