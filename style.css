@@ -21,12 +21,12 @@ body {
   align-items: center;
 }
 
-/* Logo */
 .logo {
-  width: 300px;
+  width: 140px;
   opacity: 0;
   animation: fadeIn 2.8s ease-out forwards;
-  filter: drop-shadow(0 0 12px rgba(255,255,255,0.08));
+  transform: scaleX(1.5); /* 1.0 = oryginał, 1.5 = 50% szersze */
+  transform-origin: center;
 }
 
 /* Animacja */
@@ -39,5 +39,4 @@ body {
     opacity: 1;
     transform: scale(1);
   }
-
 }
