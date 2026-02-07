@@ -22,7 +22,7 @@ body {
 .description p {
   font-size: 1rem;
   color: #ccc;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto 1.5rem;
   line-height: 1.5;
   opacity: 0;
@@ -31,12 +31,14 @@ body {
 
 .project-link a {
   color: #fff;
+  max-width: 400px;
   text-decoration: none;
+  text-align: justify;
   border-bottom: 1px solid #fff;
   padding-bottom: 2px;
   font-weight: 500;
   opacity: 0;
-  animation: fadeIn 10s ease-out 30s forwards; /* po opisie */
+  animation: fadeIn 40s ease-out 30s forwards; /* po opisie */
 }
 
 .socials {
@@ -63,6 +65,7 @@ body {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
