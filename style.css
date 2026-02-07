@@ -1,42 +1,63 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background: #000;
   color: #fff;
-  height: 100vh;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  overflow: hidden;
-}
-
-/* Wyśrodkowanie */
-.container {
-  height: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .logo {
-  width: auto;
-  height: auto;
-   opacity: 0;
-  animation: fadeIn 12s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  transform-origin: center;
+  width: 180px;
+  opacity: 0;
+  animation: fadeIn 2.8s ease-out forwards;
+  margin-bottom: 2rem;
 }
 
-/* Animacja */
+.description p {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 2.8s ease-out 1s forwards; /* pojawia się po logo */
+}
+
+.project-link a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeIn 2.8s ease-out 1.6s forwards; /* po opisie */
+}
+
+.socials {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 2.8s ease-out 2.2s forwards; /* po linku projektu */
+}
+
+.social {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social:hover {
+  color: #888; /* subtelny efekt hover */
+}
+
+/* Fade-in animacja */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.96);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
