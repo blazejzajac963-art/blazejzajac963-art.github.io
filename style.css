@@ -12,9 +12,10 @@ body {
 
 .logo {
   width: auto;
-  hight: autto;
-  opacity: 0;
-  animation: fadeIn 30s ease-out forwards;
+  height: auto;
+   opacity: 0;
+  animation: fadeIn 30s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transform-origin: center;
   margin-bottom: 2rem;
 }
 
@@ -43,7 +44,7 @@ body {
   display: flex;
   gap: 1.5rem;
   opacity: 0;
-  animation: fadeIn 2.8s ease-out 2.2s forwards; /* po linku projektu */
+  animation: fadeIn 40s ease-out 2.2s forwards; /* po linku projektu */
 }
 
 .social {
@@ -62,4 +63,5 @@ body {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
