@@ -25,7 +25,7 @@ body {
   width: auto;
   height: auto;
    opacity: 0;
-  animation: fadeIn 4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: fadeIn 6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   transform-origin: center;
 }
 
